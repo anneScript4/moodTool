@@ -1,0 +1,119 @@
+body{
+    margin:0;
+    color:#332F2F;
+    font-family: 'Roboto Mono', monospace;
+}
+
+section{
+    /* Noise / Grain */
+    background-image: url(noise-big.jpg);
+    background-position: center;
+    background-size: 120%;
+    background-blend-mode: screen;
+
+    /* Color */
+    background-color: #332F2F;
+
+    /* Alignment */
+    width:100vw;
+    height:100vh;
+    position:fixed;
+
+    /* Transition */
+    transition: background-color 0.5s ease-out, background-position 1s ease-out;
+}
+
+.frame{
+    /* Flexbox */
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+    /* Alignment */
+    height: 100vh;
+    text-align:center;
+}
+
+.button-frame{
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* Page Alignment */
+    margin: 2% 16%;
+}
+
+h1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 68px;
+    color:#332F2F;
+}
+
+a{
+    color: #332F2F;
+    font-size: 24px;
+}
+
+a:hover{
+    color: #0E30C5;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+
+    padding: 160px 40px 0px 40px;
+    margin:40px;
+    box-sizing: content-box;
+    opacity: 0.5;
+    border: none;
+
+    /* Text */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24px;
+    color:#332F2F;
+}
+
+button:hover{
+    opacity: 1;
+
+    transition: opacity 0.2s ease-out;
+}
+
+
+/* Button Content */
+#sad{
+    background: url("sad.png") no-repeat;
+    background-size: contain;
+}
+
+#happy{
+    background: url("happy.png") no-repeat;
+    background-size: contain;
+}
+
+#disgust{
+    background: url("disgust.png") no-repeat;
+    background-size: contain;
+}
+
+#fear{
+    background: url("fear.png") no-repeat;
+    background-size: contain;
+}
+
+#anger{
+    background: url("anger.png") no-repeat;
+    background-size: contain;
+}
+
+#surprise{
+    background: url("surprise.png") no-repeat;
+    background-size: contain;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="hoverState.js"> </script>
+    <script src="onClick.js"></script>
+</head>
+<body>
+
+    <section id="sectionId">
+
+        <div class="button-frame">
+
+            <button onclick="sad()" onmouseover="sadHover()" type="button" id="sad">Sad</button>
+
+            <button onclick="happy()" onmouseover="happyHover()" type="button" id="happy">Happy</button>
+
+            <button onclick="disgust()" onmouseover="disgustHover()" type="button" id="disgust">Disgust</button>
+
+            <button onclick="fear()" onmouseover="fearHover()" type="button" id="fear">Fear</button>
+
+            <button onclick="anger()" onmouseover="angerHover()" type="button" id="anger">Anger</button>
+
+            <button onclick="surprise()" onmouseover="surpriseHover()" type="button" id="surprise">Surprise</button>
+
+        </div>
+
+        <div class="hide" id="underlying-sad">
+
+            <input type="checkbox" id="lonely" name="Lonely"> <label>Lonely</label>
+
+            <input type="checkbox" id="guilty" name="Guilty"> <label>Guilty</label>
+
+            <input type="checkbox" id="depressed" name="Depressed"> <label>Depressed</label>
+        </div>
+
+    </section>
+    
+</body>
+</html>
