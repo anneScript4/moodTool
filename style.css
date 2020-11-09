@@ -1,3 +1,5 @@
+/* Page Setup */
+
 body{
     margin:0;
     color:#332F2F;
@@ -23,6 +25,9 @@ section{
     transition: background-color 0.5s ease-out, background-position 1s ease-out;
 }
 
+
+/* Start Page */
+
 .frame{
     /* Flexbox */
     display:flex;
@@ -32,17 +37,6 @@ section{
     /* Alignment */
     height: 100vh;
     text-align:center;
-}
-
-.button-frame{
-    /* Flexbox */
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    /* Page Alignment */
-    margin: 2% 16%;
 }
 
 h1{
@@ -60,7 +54,21 @@ a:hover{
     color: #0E30C5;
 }
 
-button{
+
+/* Emotion Button Style */
+
+.button-frame{
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* Page Alignment */
+    margin: 2% 16%;
+}
+
+.button-frame button{
     width: 100px;
     height: 100px;
 
@@ -76,14 +84,15 @@ button{
     color:#332F2F;
 }
 
-button:hover{
+.button-frame button:hover{
     opacity: 1;
 
-    transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-in;
 }
 
 
 /* Button Content */
+
 #sad{
     background: url("sad.png") no-repeat;
     background-size: contain;
@@ -114,6 +123,38 @@ button:hover{
     background-size: contain;
 }
 
+
+/* JavaScript Funtions */
+
 .hide{
-    display: none;
+    display:none;
+}
+
+.underlying{
+    display: flex;
+    width: 840px;
+    margin: auto;
+    justify-content: center;
+    padding:60px;
+}
+
+.complete{
+    display: flex;
+    width: 840px;
+    margin: auto;
+    justify-content: center;
+    padding:60px;
+}
+
+
+/* Complete Page */
+
+.completeClass{
+    display:none;
+    position:fixed;
+    width: 420px;
+    top:50%;
+    left:50%;
+    transform: translate( -50%, -50%);
+    text-align:center;
 }
