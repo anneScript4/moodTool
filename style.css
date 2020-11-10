@@ -1,9 +1,15 @@
 /* Page Setup */
 
+@font-face {
+    font-family: 'Sporting Grotesque_Regular';
+    src:  url('Sporting_Grotesque-Regular_web.woff2') format('woff2'),
+          url('Sporting_Grotesque-Regular_web.woff') format('woff');
+  }
+
 body{
     margin:0;
     color:#332F2F;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Sporting Grotesque_Regular';
 }
 
 section{
@@ -40,7 +46,7 @@ section{
 }
 
 h1{
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Sporting Grotesque_Regular';
     font-size: 68px;
     color:#332F2F;
 }
@@ -65,7 +71,8 @@ a:hover{
     flex-wrap: wrap;
 
     /* Page Alignment */
-    margin: 2% 16%;
+    margin: auto;
+    width: 60%;
 }
 
 .button-frame button{
@@ -79,7 +86,7 @@ a:hover{
     border: none;
 
     /* Text */
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Sporting Grotesque_Regular';
     font-size: 24px;
     color:#332F2F;
 }
@@ -103,8 +110,8 @@ a:hover{
     background-size: contain;
 }
 
-#disgust{
-    background: url("disgust.png") no-repeat;
+#content{
+    background: url("content.png") no-repeat;
     background-size: contain;
 }
 
@@ -132,10 +139,10 @@ a:hover{
 
 .underlying{
     display: flex;
-    width: 840px;
+    flex-flow: wrap;
+    width: 60%;
     margin: auto;
     justify-content: center;
-    padding:60px;
 }
 
 .complete{
@@ -152,9 +159,63 @@ a:hover{
 .completeClass{
     display:none;
     position:fixed;
-    width: 420px;
+    width: 60%;
     top:50%;
     left:50%;
     transform: translate( -50%, -50%);
-    text-align:center;
+    text-align: center;
+}
+
+#complete{
+    background: url("surprise.png") no-repeat;
+    background-size: contain;
+}
+
+#complete-container button{
+    height: 80px;
+    width: 80px;
+	border: none;
+}
+
+p{
+    font-size: 32px;
+}
+
+
+/* Label style on underlying emotions */
+
+label{
+    /* background-color: rgb(50, 82, 219); */
+    color: white;
+    margin: 10px;
+    padding: 14px 25px 10px 25px;
+    border-radius: 50px;
+}
+
+#underlying-sad label{
+    background-color: rgb(70, 91, 186);
+}
+
+#underlying-happy label{
+    background-color: rgb(255, 199, 0);
+}
+
+#underlying-content label{
+    background-color: rgb(79, 138, 19);
+}
+
+#underlying-fear label{
+    background-color: rgb(79, 79, 79);
+}
+
+#underlying-anger label{
+    background-color: rgb(240, 65, 66);
+}
+
+#underlying-surprise label{
+    background-color: rgb(100, 82, 216);
+}
+
+label:hover{
+    opacity: 0.7;
 }

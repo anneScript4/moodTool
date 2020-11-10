@@ -5,8 +5,8 @@ function sad(){
         var happyHide = document.getElementById("happy");
         happyHide.classList.add("hide");
     
-        var disgustHide = document.getElementById("disgust");
-        disgustHide.classList.add("hide");
+        var contentHide = document.getElementById("content");
+        contentHide.classList.add("hide");
     
         var fearHide = document.getElementById("fear");
         fearHide.classList.add("hide");
@@ -27,21 +27,24 @@ function sad(){
         underlyingTag.classList.add("underlying");
     
     // Show Complete button
-        var completeTag = document.getElementById("complete");
+        var completeTag = document.getElementById("complete-container");
         completeTag.classList.remove("hide");
         completeTag.classList.add("complete");
-}
+    
+    // Hide Text on Emotion
+        document.getElementById("sad").innerHTML = ""
+    }
     
     
     // HAPPY BUTTON
     
-function happy(){
+    function happy(){
     // Hide all other Buttons
         var sadHide = document.getElementById("sad");
         sadHide.classList.add("hide");
         
-        var disgustHide = document.getElementById("disgust");
-        disgustHide.classList.add("hide");
+        var contentHide = document.getElementById("content");
+        contentHide.classList.add("hide");
         
         var fearHide = document.getElementById("fear");
         fearHide.classList.add("hide");
@@ -62,15 +65,18 @@ function happy(){
         underlyingTag.classList.add("underlying");
         
     // Show Complete button
-        var completeTag = document.getElementById("complete");
+        var completeTag = document.getElementById("complete-container");
         completeTag.classList.remove("hide");
         completeTag.classList.add("complete");
-}
+    
+    // Hide Text on Emotion
+    document.getElementById("happy").innerHTML = ""
+    }
     
     
-    // DISGUST BUTTON
+    // Content BUTTON
     
-function disgust(){
+    function content(){
     // Hide all other Buttons
         var sadHide = document.getElementById("sad");
         sadHide.classList.add("hide");
@@ -88,24 +94,27 @@ function disgust(){
         surpriseHide.classList.add("hide");
         
     // Change clicked button opacity
-        var happyOpacity = document.getElementById("happy");
-        happyOpacity.style.opacity = "1";
+        var contentOpacity = document.getElementById("content");
+        contentOpacity.style.opacity = "1";
         
     // Show Underlying Emotions
-        var underlyingTag = document.getElementById("underlying-disgust");
-        underlyingTag.classList.remove("hide");
-        underlyingTag.classList.add("underlying");
+        var contentTag = document.getElementById("underlying-content");
+        contentTag.classList.remove("hide");
+        contentTag.classList.add("underlying");
         
     // Show Complete button
-        var completeTag = document.getElementById("complete");
+        var completeTag = document.getElementById("complete-container");
         completeTag.classList.remove("hide");
         completeTag.classList.add("complete");
-}
+    
+    // Hide Text on Emotion
+    document.getElementById("content").innerHTML = ""
+    }
     
     
     // FEAR BUTTON
     
-function fear(){
+    function fear(){
     // Hide all other Buttons
         var sadHide = document.getElementById("sad");
         sadHide.classList.add("hide");
@@ -113,8 +122,8 @@ function fear(){
         var happyHide = document.getElementById("happy");
         happyHide.classList.add("hide");
         
-        var disgustHide = document.getElementById("disgust");
-        disgustHide.classList.add("hide");
+        var contentHide = document.getElementById("content");
+        contentHide.classList.add("hide");
         
         var angerHide = document.getElementById("anger");
         angerHide.classList.add("hide");
@@ -123,8 +132,8 @@ function fear(){
         surpriseHide.classList.add("hide");
         
     // Change clicked button opacity
-        var happyOpacity = document.getElementById("happy");
-        happyOpacity.style.opacity = "1";
+        var fearOpacity = document.getElementById("fear");
+        fearOpacity.style.opacity = "1";
         
     // Show Underlying Emotions
         var underlyingTag = document.getElementById("underlying-fear");
@@ -132,15 +141,18 @@ function fear(){
         underlyingTag.classList.add("underlying");
         
     // Show Complete button
-        var completeTag = document.getElementById("complete");
+        var completeTag = document.getElementById("complete-container");
         completeTag.classList.remove("hide");
         completeTag.classList.add("complete");
-}
+    
+    // Hide Text on Emotion
+    document.getElementById("fear").innerHTML = ""
+    }
     
     
     // ANGER BUTTON
     
-function anger(){
+    function anger(){
     // Hide all other Buttons
         var sadHide = document.getElementById("sad");
         sadHide.classList.add("hide");
@@ -148,8 +160,8 @@ function anger(){
         var happyHide = document.getElementById("happy");
         happyHide.classList.add("hide");
         
-        var disgustHide = document.getElementById("disgust");
-        disgustHide.classList.add("hide");
+        var contentHide = document.getElementById("content");
+        contentHide.classList.add("hide");
         
         var fearHide = document.getElementById("fear");
         fearHide.classList.add("hide");
@@ -158,8 +170,8 @@ function anger(){
         surpriseHide.classList.add("hide");
         
     // Change clicked button opacity
-        var happyOpacity = document.getElementById("happy");
-        happyOpacity.style.opacity = "1";
+        var angerOpacity = document.getElementById("anger");
+        angerOpacity.style.opacity = "1";
         
     // Show Underlying Emotions
         var underlyingTag = document.getElementById("underlying-anger");
@@ -167,15 +179,18 @@ function anger(){
         underlyingTag.classList.add("underlying");
         
     // Show Complete button
-        var completeTag = document.getElementById("complete");
+        var completeTag = document.getElementById("complete-container");
         completeTag.classList.remove("hide");
         completeTag.classList.add("complete");
-}
+    
+    // Hide Text on Emotion
+    document.getElementById("anger").innerHTML = ""
+    }
     
     
     // SURPRISE BUTTON
     
-function surprise(){
+    function surprise(){
     // Hide all other Buttons
         var sadHide = document.getElementById("sad");
         sadHide.classList.add("hide");
@@ -183,8 +198,8 @@ function surprise(){
         var happyHide = document.getElementById("happy");
         happyHide.classList.add("hide");
         
-        var disgustHide = document.getElementById("disgust");
-        disgustHide.classList.add("hide");
+        var contentHide = document.getElementById("content");
+        contentHide.classList.add("hide");
         
         var fearHide = document.getElementById("fear");
         fearHide.classList.add("hide");
@@ -193,8 +208,8 @@ function surprise(){
         angerHide.classList.add("hide");
         
     // Change clicked button opacity
-        var happyOpacity = document.getElementById("happy");
-        happyOpacity.style.opacity = "1";
+        var surpriseOpacity = document.getElementById("surprise");
+        surpriseOpacity.style.opacity = "1";
         
     // Show Underlying Emotions
         var underlyingTag = document.getElementById("underlying-surprise");
@@ -202,15 +217,18 @@ function surprise(){
         underlyingTag.classList.add("underlying");
         
     // Show Complete button
-        var completeTag = document.getElementById("complete");
+        var completeTag = document.getElementById("complete-container");
         completeTag.classList.remove("hide");
         completeTag.classList.add("complete");
-}
+    
+    // Hide Text on Emotion
+    document.getElementById("surprise").innerHTML = ""
+    }
     
     
     // Complete Button
     
-function complete(){
+    function complete(){
     // Show Quote
         var completeTag = document.getElementById("completeId")
         completeTag.style.display = "block"
@@ -224,8 +242,8 @@ function complete(){
         var happyHide = document.getElementById("happy");
         happyHide.classList.add("hide");
     
-        var disgustHide = document.getElementById("disgust");
-        disgustHide.classList.add("hide");
+        var contentHide = document.getElementById("content");
+        contentHide.classList.add("hide");
     
         var fearHide = document.getElementById("fear");
         fearHide.classList.add("hide");
@@ -245,9 +263,9 @@ function complete(){
         underlyingHappy.classList.add("hide");
         underlyingHappy.classList.remove("underlying");
     
-        var underlyingDisgust = document.getElementById("underlying-disgust");
-        underlyingDisgust.classList.add("hide");
-        underlyingDisgust.classList.remove("underlying");
+        var underlyingContent = document.getElementById("underlying-content");
+        underlyingContent.classList.add("hide");
+        underlyingContent.classList.remove("underlying");
     
         var underlyingFear = document.getElementById("underlying-fear");
         underlyingFear.classList.add("hide");
@@ -266,4 +284,5 @@ function complete(){
         completeTag.classList.add("hide");
         completeTag.classList.remove("complete");
     
-}
+    }
+    

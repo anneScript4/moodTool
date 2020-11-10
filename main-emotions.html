@@ -23,7 +23,7 @@
 
             <button onclick="happy()" onmouseover="happyHover()" type="button" id="happy">Happy</button>
 
-            <button onclick="disgust()" onmouseover="disgustHover()" type="button" id="disgust">Disgust</button>
+            <button onclick="content()" onmouseover="contentHover()" type="button" id="content">Content</button>
 
             <button onclick="fear()" onmouseover="fearHover()" type="button" id="fear">Fear</button>
 
@@ -39,26 +39,67 @@
 
         <div class="hide" id="underlying-sad">
 
-            <input type="checkbox" id="lonely" name="Lonely"> <label>Lonely</label>
+            <label><input type="checkbox" id="lonely" name="Lonely"> Lonely</label>
 
-            <input type="checkbox" id="guilty" name="Guilty"> <label>Guilty</label>
+            <label><input type="checkbox" id="guilty" name="Guilty"> Guilty</label>
 
-            <input type="checkbox" id="depressed" name="Depressed"> <label>Depressed</label>
+            <label><input type="checkbox" id="depressed" name="Depressed"> Depressed</label>
+
+            <label><input type="checkbox" id="abandoned" name="Abandoned"> Abandoned</label>
+
+            <label><input type="checkbox" id="despair" name="Despair"> Despair</label>
+
+            <label><input type="checkbox" id="disapointed" name="Disapointed"> Disapointed</label>
+
+            <label><input type="checkbox" id="awful" name="Awful"> Awful</label>
+
+            <label><input type="checkbox" id="empty" name="Empty"> Empty</label>
+
+            <label><input type="checkbox" id="sombre" name="Sombre"> Sombre</label>
+
         </div>
 
             <!-- Happy -->
 
         <div class="hide" id="underlying-happy">
 
-            <input type="checkbox" id="accepted" name="accepted"> <label>Accepted</label>
+            <label><input type="checkbox" id="joyful" name="Joyful"> Joyful</label>
+
+            <label><input type="checkbox" id="inspired" name="Inspired"> Inspired</label>
+
+            <label><input type="checkbox" id="proud" name="Proud"> Proud</label>
+
+            <label><input type="checkbox" id="powerful" name="Powerful"> Powerful</label>
+
+            <label><input type="checkbox" id="optimistic" name="Optimistic"> Optimistic</label>
+
+            <label><input type="checkbox" id="fulfilled" name="Fulfilled"> Fulfilled</label>
+
+            <label><input type="checkbox" id="ecstatic" name="Ecstatic"> Ecstatic</label>
+
+            <label><input type="checkbox" id="courageous" name="Courageous"> Courageous</label>
+
+            <label><input type="checkbox" id="confident" name="Confident"> Confident</label>
 
         </div>
 
-            <!-- Disgust -->
+            <!-- Content -->
 
-        <div class="hide" id="underlying-disgust">
+        <div class="hide" id="underlying-content">
 
-            <input type="checkbox" id="_______" name="_______"> <label>_______</label>
+            <label><input type="checkbox" id="peaceful" name="Peaceful"> Peaceful</label>
+
+            <label><input type="checkbox" id="calm" name="Calm"> Calm</label>
+
+            <label><input type="checkbox" id="indifferent" name="Indifferent"> Indifferent</label>
+
+            <label><input type="checkbox" id="serenity" name="Serenity"> Serenity</label>
+
+            <label><input type="checkbox" id="tranquility" name="Tranquility"> Tranquility</label>
+
+            <label><input type="checkbox" id="apathetic" name="Apathetic"> Apathetic</label>
+
+            <label><input type="checkbox" id="bored" name="Bored"> Bored</label>
     
         </div>
 
@@ -66,7 +107,19 @@
 
         <div class="hide" id="underlying-fear">
 
-            <input type="checkbox" id="_______" name="_______"> <label>_______</label>
+            <label><input type="checkbox" id="rejected" name="Rejected"> Rejected</label>
+
+            <label><input type="checkbox" id="insecure" name="Insecure"> Insecure</label>
+
+            <label><input type="checkbox" id="anxious" name="Anxious"> Anxious</label>
+
+            <label><input type="checkbox" id="scared" name="Scared"> Scared</label>
+
+            <label><input type="checkbox" id="aversion" name="Aversion"> Aversion</label>
+
+            <label><input type="checkbox" id="dread" name="Dread"> Dread</label>
+
+            <label><input type="checkbox" id="humiliated" name="Humiliated"> Humiliated</label>
 
         </div>
 
@@ -74,7 +127,23 @@
 
         <div class="hide" id="underlying-anger">
 
-            <input type="checkbox" id="_______" name="_______"> <label>_______</label>
+            <label><input type="checkbox" id="irritated" name="Irritated"> Irritated</label>
+
+            <label><input type="checkbox" id="annoyed" name="Annoyed"> Annoyed</label>
+
+            <label><input type="checkbox" id="frustrated" name="Frustrated"> Frustrated</label>
+
+            <label><input type="checkbox" id="aggressive" name="Aggressive"> Aggressive</label>
+
+            <label><input type="checkbox" id="mad" name="Mad"> Mad</label>
+
+            <label><input type="checkbox" id="hateful" name="Hateful"> Hateful</label>
+
+            <label><input type="checkbox" id="threatened" name="Threatened"> Threatened</label>
+
+            <label><input type="checkbox" id="hurt" name="Hurt"> Hurt</label>
+
+            <label><input type="checkbox" id="detested" name="Detested"> Detested</label>
     
         </div>
 
@@ -82,16 +151,26 @@
 
         <div class="hide" id="underlying-surprise">
 
-            <input type="checkbox" id="_______" name="_______"> <label>_______</label>
+            <label><input type="checkbox" id="startled" name="Startled"> Startled</label>
+
+            <label><input type="checkbox" id="confused" name="Confused"> Confused</label>
+
+            <label><input type="checkbox" id="amazed" name="Amazed"> Amazed</label>
+
+            <label><input type="checkbox" id="astonished" name="Astonished"> Astonished</label>
+
+            <label><input type="checkbox" id="excited" name="Excited"> Excited</label>
+
+            <label><input type="checkbox" id="awe" name="Awe"> Awe</label>
     
         </div>
 
 
         <!-- Complete Button -->
 
-        <div class="hide" id="complete">
+        <div class="hide" id="complete-container">
 
-            <button onclick="complete()" type="button" id="complete">Complete</button>
+            <button onclick="complete()" type="button" id="complete"></button>
 
         </div>
 
@@ -99,9 +178,12 @@
 
     <div class="completeClass" id="completeId">
 
-            <p>BlaH BLAh</p>
+            <p>"The way I see it, if you want the rainbow, you gotta put up with the rain"</p>
+
+            <p> - Dolly Parton</p>
 
     </div>
+
     
 </body>
 </html>
