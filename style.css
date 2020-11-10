@@ -20,7 +20,7 @@ section{
     background-blend-mode: screen;
 
     /* Color */
-    background-color: #332F2F;
+    background-color: #a5a5a5;
 
     /* Alignment */
     width:100vw;
@@ -54,10 +54,12 @@ h1{
 a{
     color: #332F2F;
     font-size: 24px;
+
+    opacity: 0.5;
 }
 
 a:hover{
-    color: #0E30C5;
+    opacity: 1;
 }
 
 
@@ -73,6 +75,7 @@ a:hover{
     /* Page Alignment */
     margin: auto;
     width: 60%;
+    transform: translate( 0, 10%)
 }
 
 .button-frame button{
