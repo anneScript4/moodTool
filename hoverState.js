@@ -14,9 +14,9 @@ function happyHover(){
     moveTag.style.backgroundPosition = "center bottom";
 }
 
-function disgustHover(){
+function contentHover(){
     var colorTag = document.getElementById('sectionId');
-    colorTag.style.backgroundColor = "#02A66A";
+    colorTag.style.backgroundColor = "#4F8A13";
 
     var moveTag = document.getElementById('sectionId');
     moveTag.style.backgroundPosition = "left bottom";
@@ -24,7 +24,7 @@ function disgustHover(){
 
 function fearHover(){
     var colorTag = document.getElementById('sectionId');
-    colorTag.style.backgroundColor = "#F36F2C";
+    colorTag.style.backgroundColor = "#101115";
 
     var moveTag = document.getElementById('sectionId');
     moveTag.style.backgroundPosition = "right top";

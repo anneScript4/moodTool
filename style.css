@@ -89,12 +89,20 @@ a:hover{
     font-family: 'Sporting Grotesque_Regular';
     font-size: 24px;
     color:#332F2F;
+
+    
+}
+
+.button-frame button:focus {
+    outline:0;
 }
 
 .button-frame button:hover{
     opacity: 1;
 
     transition: opacity 0.2s ease-in;
+
+    text-decoration: underline;
 }
 
 
@@ -172,9 +180,20 @@ a:hover{
 }
 
 #complete-container button{
-    height: 80px;
-    width: 80px;
-	border: none;
+    border: none;
+    opacity: 0.5;
+
+    padding-left: 50px;
+    padding-top: 12px;
+
+    font-size: 24px;
+    font-family: 'Sporting Grotesque_Regular';
+}
+
+#complete-container button:hover{
+    opacity: 1;
+
+    text-decoration: underline;
 }
 
 p{
