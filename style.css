@@ -74,7 +74,7 @@ a:hover{
 
     /* Page Alignment */
     margin: auto;
-    width: 60%;
+    max-width: 900px;
     transform: translate( 0, 10%)
 }
 
@@ -240,4 +240,84 @@ label{
 
 label:hover{
     opacity: 0.7;
+}
+
+
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    section{
+        background-size: auto;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    section{
+        background-size: auto;
+    }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    section{
+        background-size: auto;
+    }
+    .button-frame{
+        transform: translate( 0, 0%);
+    }
+    .button-frame button{
+        padding: 110px 20px 0px 20px;
+    margin: 10px;
+    }
+    .underlying{
+        width:auto;
+        transform: translate(0px, -100px);
+    }
+    .complete{
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0px);
+    }
+    .completeClass{
+        width:80%;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    section{
+        background-size: auto;
+    }
+    .button-frame{
+        transform: translate( 0, 0%);
+    }
+    .button-frame button{
+        padding: 100px 20px 0px 20px;
+        margin: 20px;
+    }
+    .underlying{
+        width:auto;
+        transform: translate(0px, -50px);
+    }
+    .complete{
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0px);
+    }
+    .completeClass{
+        width:80%;
+    }
 }
