@@ -7,3 +7,8 @@
 Inspired by the work by Dr. Joan Rosenberg, whom encourages the importance of riding the wave of any emotion you might be experiencing, for at least 90 seconds.
 
 [Try out The Mood Tool for your self right now!](https://themoodtool.com)
+
+
+
+<img src="https://raw.githubusercontent.com/anneScript4/moodTool.github.io/main/content.png"
+     alt="Content Dog Illustration"/>
